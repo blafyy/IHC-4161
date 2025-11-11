@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MyLook</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+
+  <body>
+    <nav class="top-header">
+      <a href="#" class="logo">
+        <img height="60" src="image/logo_ihc.png" alt="MyLook logo" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li>
+          <a href="#">Community</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">For you</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Closet</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#">Clothes</a></li>
+            <li><a href="#">Outfit</a></li>
+            <li><a href="#">Collection</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+
+    <section class="seccion-comunnity">
+      <div class="cont-gral-comunnity">
+        <div class="cont-communn-texto">
+          <h2>COMUNIDAD</h2>
+          <p>
+            La Comunidad MyLook es tu espacio para descubrir nuevas tendencias,
+            obtener feedback sobre tus outfits y conectar con amantes de la
+            moda.
+            <br /><br />
+            <strong>Inspírate:</strong> Navega por los estilos de otros usuarios
+            y guarda los looks que más te gusten directamente en tu Closet.
+            <br />
+            <strong>Comparte:</strong> Publica tus propios outfits para recibir
+            consejos y comentarios. <br />
+            <strong>Participa:</strong> Vota en desafíos de estilo, sigue a tus
+            influencers favoritos y sé parte de la conversación.
+          </p>
+        </div>
+
+        <div class="cont-communn-image">
+          <img
+            src="image/ropa ihc.png"
+            alt="Imagen de ropa MyLook"
+            width="350"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="Seccion-Actividades">
+      <div class="cont-gral-actividades">
+        <div class="cont-actividad-texto">
+          <h2>Actividad</h2>
+          <p>
+            Descubre las últimas actividades de la comunidad, explora looks
+            populares, y encuentra nuevas fuentes de inspiración en la moda.
+          </p>
+        </div>
+
+        <div class="cont-actividad-video">
+          <iframe
+            src="https://www.youtube.com/embed/mPgpehV3ZMg"
+            title="VIDEO DEMOSTRATIVO"
+            allowfullscreen
+            loading="lazy"
+            width="560"
+            height="315"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTANOS -->
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario del registro</h2>
+        <p>Complete todos los campos</p>
+
+        <form>
+          <div class="campo">
+            <label for="nombre">Nombres completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un país</option>
+              <option value="Peru">Perú</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Colombia">Colombia</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="tecnologia" />
+                  Tecnología</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="educacion" />
+                  Educación</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="deporte" />
+                  Deporte</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="arte" />
+                  Arte</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="ciencia" />
+                  Ciencia</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Radio Button -->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="genero" value="masculino" />
+                  Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="genero" value="femenino" />
+                  Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="image/logo_ihc.png" alt="MyLook logo" class="footer-logo" />
+          <p>MyLook © 2025</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="docs/politica_de_privacidad.pdf" target="_blank"
+              >Política de Privacidad</a
+            >
+            <a href="docs/terminos_y_condiciones.pdf" target="_blank"
+              >Términos y Condiciones</a
+            >
+            <a href="docs/proteccion_de_datos.pdf" target="_blank"
+              >Protección de Datos</a
+            >
+          </div>
+
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

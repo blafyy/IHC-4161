@@ -1,0 +1,202 @@
+.top-header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 5.625rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu-Horizontal li {
+  display: block;
+  padding: 0.9375rem 1.25rem;
+  color: black;
+}
+
+.Menu-Horizontal li:hover {
+  color: red;
+}
+
+.Menu-Horizontal li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 12.5rem;
+  background-color: white;
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.Menu-Vertical li {
+  display: block;
+  color: green;
+  padding: 0.9375rem 0.9375rem 1.25rem;
+}
+
+.Menu-Vertical li:hover {
+  background-color: grey;
+}
+
+.seccion-comunnity {
+  padding: 7.5rem 1.25rem 5rem;
+  background-color: rgb(221, 230, 227);
+}
+
+.cont-gral-comunnity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.cont-communn-texto {
+  flex: 1;
+  text-align: left;
+}
+
+.cont-communn-texto h2 {
+  color: blue;
+  margin-bottom: 1.1875rem;
+  text-align: center;
+}
+
+.cont-communn-texto p {
+  color: black;
+  line-height: 1.5;
+}
+
+.cont-communn-image {
+  flex: 1;
+  width: 100%;
+  max-width: 31.25rem;
+  border-radius: 0.625rem;
+}
+
+.cont-communn-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.625rem;
+}
+
+.cont-gral-actividades {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.cont-actividad-texto {
+  flex: 1;
+}
+
+.cont-actividad-texto h2 {
+  color: blue;
+  margin-bottom: 0.9375rem;
+}
+
+.cont-actividad-texto p {
+  color: black;
+  line-height: 1.6;
+}
+
+.cont-actividad-video {
+  flex: 1;
+}
+
+.Seccion-Actividades {
+  padding: 5rem 1.25rem;
+}
+
+.cont-actividad-video iframe {
+  width: 100%;
+}
+
+.seccion-formulario {
+  background-color: white;
+  padding: 2.5rem;
+  border: 0.1875rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.div-cont-formulario {
+  background-color: white;
+  padding: 1.875rem;
+  border: 0.125rem solid #000000;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+.campo {
+  border: 0.0625rem;
+  padding: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  border-radius: 0.5rem;
+  background-color: aquamarine;
+}
+
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: blue;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+}
+
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  border: 0.0625rem;
+  background-color: cadetblue;
+  border-radius: 0.5rem;
+}
+
+.lista-checkbox li,
+.lista-radio li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
