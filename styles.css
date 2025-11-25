@@ -1,11 +1,16 @@
+/* ===================================================== */
+/* ESTILOS GENERALES + MENÚ */
+/* ===================================================== */
+
 .top-header {
   position: fixed;
   background-color: white;
   width: 100%;
   height: 5.625rem;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 1rem;
   z-index: 100;
 }
 
@@ -56,6 +61,10 @@
   background-color: grey;
 }
 
+/* ===================================================== */
+/* SECCIÓN COMUNIDAD */
+/* ===================================================== */
+
 .seccion-comunnity {
   padding: 7.5rem 1.25rem 5rem;
   background-color: rgb(221, 230, 227);
@@ -100,6 +109,10 @@
   border-radius: 0.625rem;
 }
 
+/* ===================================================== */
+/* SECCIÓN ACTIVIDADES */
+/* ===================================================== */
+
 .cont-gral-actividades {
   display: flex;
   justify-content: space-between;
@@ -136,10 +149,13 @@
   width: 100%;
 }
 
+/* ===================================================== */
+/* FORMULARIO */
+/* ===================================================== */
+
 .seccion-formulario {
   background-color: white;
   padding: 2.5rem;
-  border: 0.1875rem;
   display: flex;
   justify-content: center;
   margin-bottom: 2.5rem;
@@ -155,7 +171,6 @@
 }
 
 .campo {
-  border: 0.0625rem;
   padding: 0.9375rem;
   margin-bottom: 0.9375rem;
   border-radius: 0.5rem;
@@ -173,7 +188,7 @@ input[type="text"],
 select {
   width: 100%;
   padding: 0.625rem;
-  border: 0.0625rem solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 0.3125rem;
 }
 
@@ -182,7 +197,6 @@ select {
   list-style: none;
   padding: 0.625rem;
   margin: 0;
-  border: 0.0625rem;
   background-color: cadetblue;
   border-radius: 0.5rem;
 }
@@ -199,4 +213,176 @@ button {
   padding: 0.75rem 1.25rem;
   border-radius: 0.3125rem;
   cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ===================================================== */
+/* FOOTER */
+/* ===================================================== */
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex: 1;
+  min-width: 200px;
+  justify-content: flex-end;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* ===================================================== */
+/* RESPONSIVE */
+/* ===================================================== */
+
+/* TABLET (768px) */
+@media (max-width: 768px) {
+  /* Menú más compacto */
+  .Menu-Horizontal {
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+  }
+
+  .cont-gral-comunnity,
+  .cont-gral-actividades {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cont-communn-texto,
+  .cont-actividad-texto {
+    text-align: center;
+  }
+
+  .top-header {
+    height: auto;
+    padding: 1rem;
+  }
+}
+
+/* MÓVIL (600px) */
+@media (max-width: 600px) {
+  .Menu-Horizontal {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+  }
+
+  .Menu-Horizontal li {
+    padding: 0.5rem;
+  }
+
+  .Menu-Vertical {
+    position: static;
+    width: 100%;
+  }
+
+  .cont-communn-texto,
+  .cont-actividad-texto {
+    text-align: center;
+  }
+
+  .seccion-formulario {
+    padding: 1.25rem;
+  }
+
+  .div-cont-formulario {
+    padding: 1.25rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ========================= */
+/* RESPONSIVE PARA EL MENÚ   */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .top-header {
+    justify-content: center;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .Menu-Horizontal {
+    flex-direction: column; /* 🔥 CONVIERTE EL MENÚ EN VERTICAL */
+    align-items: center; /* Centrado */
+    gap: 0.5rem; /* Separación entre items */
+  }
+
+  .Menu-Horizontal li {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Submenú también centrado */
+  .Menu-Vertical {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .Menu-Vertical li {
+    padding: 0.5rem 0;
+  }
 }

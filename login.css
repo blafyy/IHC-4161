@@ -1,0 +1,156 @@
+/* ===================================================== */
+/* CONTENEDOR PRINCIPAL */
+/* ===================================================== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding: 1.25rem;
+}
+
+/* ===================================================== */
+/* CAJA DEL FORMULARIO */
+/* ===================================================== */
+.login-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 25rem;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 1.5625rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.input-group {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.3125rem;
+  background-color: #2575fc;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.625rem;
+}
+
+.login-button:hover {
+  background-color: #0e63e2;
+}
+
+/* ===================================================== */
+/* RESPONSIVE TABLET (max-width: 900px) */
+/* ===================================================== */
+
+@media (max-width: 900px) {
+  .login-container {
+    padding: 1rem;
+  }
+
+  .login-box {
+    padding: 2rem;
+    max-width: 22rem; /* Se adapta mejor a tablets */
+  }
+
+  .login-box h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ===================================================== */
+/* RESPONSIVE MÓVIL (max-width: 600px) */
+/* ===================================================== */
+
+@media (max-width: 600px) {
+  .login-container {
+    padding: 0;
+    background: #fff;
+    align-items: flex-start;
+    min-height: auto;
+  }
+
+  .login-box {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    text-align: left;
+  }
+
+  .login-box h2 {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+
+  .input-group input {
+    padding: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .login-button {
+    padding: 1rem;
+    font-size: 1.15rem;
+  }
+}
+
+/* ===================================================== */
+/* MÓVILES MUY PEQUEÑOS (max-width: 380px) */
+/* ===================================================== */
+
+@media (max-width: 380px) {
+  .login-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-group label {
+    font-size: 0.9rem;
+  }
+
+  .input-group input {
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .login-button {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}
