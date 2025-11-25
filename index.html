@@ -9,7 +9,7 @@
   <body>
     <section class="login-container">
       <div class="login-box">
-        <h2>Acceso Restringido</h2>
+        <h2>Acceso</h2>
 
         <form onsubmit="return validarLogin(event);">
           <div class="input-group">
@@ -22,7 +22,7 @@
               required
             />
           </div>
-        
+
           <div class="input-group">
             <label for="email">Email</label>
             <input
@@ -33,9 +33,9 @@
               required
             />
           </div>
-        
+
           <div class="input-group">
-            <label for="password">Clave de Acceso</label>
+            <label for="password">Clave de Acceso (contraseña)</label>
             <input
               type="password"
               id="password"
@@ -44,10 +44,14 @@
               required
             />
           </div>
-        
+
           <button type="submit" class="login-button">Iniciar Sesión</button>
         </form>
-        </form>
+
+        <!-- Logo debajo del formulario -->
+        <div class="login-logo">
+          <img src="image/logo_ihc.png" alt="Logo IHC" />
+        </div>
       </div>
     </section>
 

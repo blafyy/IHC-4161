@@ -15,6 +15,12 @@
         <img height="60" src="image/logo_ihc.png" alt="MyLook logo" />
       </a>
 
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
+
       <ul class="Menu-Horizontal">
         <li>
           <a href="#">Community</a>
@@ -53,6 +59,7 @@
       </ul>
     </nav>
 
+    <!-- SECCIÓN COMUNIDAD -->
     <section class="seccion-comunnity">
       <div class="cont-gral-comunnity">
         <div class="cont-communn-texto">
@@ -82,6 +89,7 @@
       </div>
     </section>
 
+    <!-- SECCIÓN ACTIVIDADES -->
     <section class="Seccion-Actividades">
       <div class="cont-gral-actividades">
         <div class="cont-actividad-texto">
@@ -100,12 +108,12 @@
             loading="lazy"
             width="560"
             height="315"
-          >
-          </iframe>
+          ></iframe>
         </div>
       </div>
     </section>
 
+    <!-- FORMULARIO -->
     <section class="seccion-formulario">
       <div class="div-cont-formulario">
         <h2>Formulario del registro</h2>
@@ -194,6 +202,7 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-brand">
@@ -204,10 +213,12 @@
         <div class="footer-right">
           <div class="footer-links">
             <h4>Legal</h4>
-            <a href="docs/politica_de_privacidad.pdf" target="_blank"
+            <a href="https://policies.google.com/privacy?hl=es" target="_blank"
               >Política de Privacidad</a
             >
-            <a href="docs/terminos_y_condiciones.pdf" target="_blank"
+            <a
+              href="https://phylo.co/blog/que-son-los-terminos-y-condiciones/"
+              target="_blank"
               >Términos y Condiciones</a
             >
             <a href="docs/proteccion_de_datos.pdf" target="_blank"
@@ -246,12 +257,12 @@
       </div>
     </footer>
 
+    <!-- SCRIPT: CERRAR SESIÓN -->
     <script>
-      // Verifica si hay sesión
       const usuario = localStorage.getItem("usuario");
 
       if (!usuario) {
-        window.location.href = "index.html"; // si no hay sesión vuelve al login
+        window.location.href = "index.html";
       }
 
       function cerrarSesion() {
@@ -259,5 +270,8 @@
         window.location.href = "index.html";
       }
     </script>
+
+    <!-- SCRIPT: MENU HAMBURGUESA -->
+    <script src="menu_toggle.js"></script>
   </body>
 </html>

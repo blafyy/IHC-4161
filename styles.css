@@ -1,4 +1,35 @@
 /* ===================================================== */
+/* FUENTES Y ESTILO GLOBAL */
+/* ===================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+body {
+  font-family: "Alfa Slab One", serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegurar que todo texto use la fuente */
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+label,
+button,
+input,
+select,
+textarea {
+  font-family: "Alfa Slab One", serif !important;
+}
+
+/* ===================================================== */
 /* ESTILOS GENERALES + MENÚ */
 /* ===================================================== */
 
@@ -45,6 +76,7 @@
   display: none;
   width: 12.5rem;
   background-color: white;
+  z-index: 100;
 }
 
 .Menu-Horizontal li:hover .Menu-Vertical {
@@ -59,6 +91,16 @@
 
 .Menu-Vertical li:hover {
   background-color: grey;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
 /* ===================================================== */
@@ -227,7 +269,7 @@ button:hover {
   background-color: #222;
   color: white;
   padding: 2rem 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Alfa Slab One", serif !important;
 }
 
 .footer-container {
@@ -288,9 +330,30 @@ button:hover {
 
 /* TABLET (768px) */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: black;
+  }
+
   .Menu-Horizontal {
-    justify-content: space-evenly;
-    font-size: 0.9rem;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    z-index: 200;
+  }
+
+  .Menu-Horizontal.active {
+    display: flex;
+  }
+
+  .Menu-Horizontal li {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 0.5rem 0;
   }
 
   .cont-gral-comunnity,
@@ -312,18 +375,9 @@ button:hover {
 
 /* MÓVIL (600px) */
 @media (max-width: 600px) {
-  .Menu-Horizontal {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .Menu-Horizontal li {
-    padding: 0.5rem 1rem;
-  }
-
-  .cont-communn-texto,
-  .cont-actividad-texto {
+  .cont-gral-comunnity,
+  .cont-gral-actividades {
+    flex-direction: column;
     text-align: center;
   }
 
@@ -343,34 +397,5 @@ button:hover {
   .footer-right {
     flex-direction: column;
     align-items: center;
-  }
-}
-
-/* ========================= */
-/* MENÚ SIEMPRE HORIZONTAL   */
-/* ========================= */
-
-@media (max-width: 768px) {
-  .top-header {
-    height: auto;
-    padding: 1rem;
-  }
-
-  .Menu-Horizontal {
-    display: flex;
-    flex-direction: row; /* ← Mantener horizontal */
-    flex-wrap: wrap; /* ← Baja en filas si no entra */
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .Menu-Horizontal li {
-    padding: 0.5rem 1rem;
-    text-align: center;
-  }
-
-  .Menu-Vertical {
-    position: absolute;
-    width: 12rem;
   }
 }
