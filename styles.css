@@ -288,7 +288,6 @@ button:hover {
 
 /* TABLET (768px) */
 @media (max-width: 768px) {
-  /* Menú más compacto */
   .Menu-Horizontal {
     justify-content: space-evenly;
     font-size: 0.9rem;
@@ -314,18 +313,13 @@ button:hover {
 /* MÓVIL (600px) */
 @media (max-width: 600px) {
   .Menu-Horizontal {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
   .Menu-Horizontal li {
-    padding: 0.5rem;
-  }
-
-  .Menu-Vertical {
-    position: static;
-    width: 100%;
+    padding: 0.5rem 1rem;
   }
 
   .cont-communn-texto,
@@ -353,36 +347,30 @@ button:hover {
 }
 
 /* ========================= */
-/* RESPONSIVE PARA EL MENÚ   */
+/* MENÚ SIEMPRE HORIZONTAL   */
 /* ========================= */
 
 @media (max-width: 768px) {
   .top-header {
-    justify-content: center;
     height: auto;
-    padding: 1rem 0;
+    padding: 1rem;
   }
 
   .Menu-Horizontal {
-    flex-direction: column; /* 🔥 CONVIERTE EL MENÚ EN VERTICAL */
-    align-items: center; /* Centrado */
-    gap: 0.5rem; /* Separación entre items */
+    display: flex;
+    flex-direction: row; /* ← Mantener horizontal */
+    flex-wrap: wrap; /* ← Baja en filas si no entra */
+    justify-content: center;
+    gap: 1rem;
   }
 
   .Menu-Horizontal li {
-    padding: 0.5rem 0;
-    font-size: 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
   }
 
-  /* Submenú también centrado */
   .Menu-Vertical {
-    position: static;
-    width: 100%;
-    text-align: center;
-  }
-
-  .Menu-Vertical li {
-    padding: 0.5rem 0;
+    position: absolute;
+    width: 12rem;
   }
 }
