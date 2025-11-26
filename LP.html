@@ -18,7 +18,6 @@
       <!-- BOTÓN HAMBURGUESA -->
       <button class="menu-toggle" aria-label="Abrir menú">
         &#9776;
-        <!-- Ícono de hamburguesa -->
       </button>
 
       <ul class="Menu-Horizontal">
@@ -33,7 +32,6 @@
         <li>
           <a href="#">Closet</a>
           <ul class="Menu-Vertical">
-            <li><a href="#">Clothes</a></li>
             <li><a href="#">Outfit</a></li>
             <li><a href="#">Collection</a></li>
           </ul>
@@ -59,46 +57,105 @@
       </ul>
     </nav>
 
-    <!-- SECCIÓN COMUNIDAD -->
-    <section class="seccion-comunnity">
-      <div class="cont-gral-comunnity">
-        <div class="cont-communn-texto">
-          <h2>COMUNIDAD</h2>
-          <p>
-            La Comunidad MyLook es tu espacio para descubrir nuevas tendencias,
-            obtener feedback sobre tus outfits y conectar con amantes de la
-            moda.
-            <br /><br />
-            <strong>Inspírate:</strong> Navega por los estilos de otros usuarios
-            y guarda los looks que más te gusten directamente en tu Closet.
-            <br />
-            <strong>Comparte:</strong> Publica tus propios outfits para recibir
-            consejos y comentarios. <br />
-            <strong>Participa:</strong> Vota en desafíos de estilo, sigue a tus
-            influencers favoritos y sé parte de la conversación.
-          </p>
+    <!-- SECCIÓN APP TOUR -->
+    <section class="app-tour">
+      <div class="app-tour-container">
+        <div class="app-tour-image">
+          <img src="image/celular sin fondo.png" alt="App MyLook">
         </div>
+    
+<div class="app-tour-text">
+  <span class="titulo-grande">MyLook</span><br>
+  <span class="titulo-pequeno">App Tour</span>
+</div>
 
-        <div class="cont-communn-image">
-          <img
-            src="image/ropa ihc.png"
-            alt="Imagen de ropa MyLook"
-            width="350"
-          />
-        </div>
+    
+        <!-- Mancha detrás -->
+        <img src="image/mancha.png" alt="Decoración" class="blob-img">
       </div>
     </section>
 
-    <!-- SECCIÓN ACTIVIDADES -->
-    <section class="Seccion-Actividades">
-      <div class="cont-gral-actividades">
-        <div class="cont-actividad-texto">
-          <h2>Actividad</h2>
-          <p>
-            Descubre las últimas actividades de la comunidad, explora looks
-            populares, y encuentra nuevas fuentes de inspiración en la moda.
-          </p>
+    <!-- BANNER COMPLETO BAJO APP TOUR -->
+<section class="banner-full">
+  <img src="image/linea recta.png" alt="Banner completo">
+</section>
+
+    
+
+    <!-- SECCIÓN DESCRIPCION -->
+    <section class="social-new">
+      <div class="social-container">
+        
+        <!-- CELULAR IZQUIERDA -->
+        <div class="social-image">
+          <img src="image/ropa ihc.png" alt="App MyLook">
         </div>
+    
+        <!-- TEXTO DERECHA -->
+        <div class="social-text">
+          
+          <div class="feature-item">
+            <div class="number-circle">1</div>
+            <div>
+              <h3>Organiza tu armario, rápido.</h3>
+              <p>Agrega tus prendas en segundos. Toma fotos y MyLook eliminará el fondo automáticamente.</p>
+            </div>
+          </div>
+    
+          <div class="feature-item">
+            <div class="number-circle">2</div>
+            <div>
+              <h3>Visualiza tu guardarropa a tu manera.</h3>
+              <p>Ve todo lo que tienes en un solo lugar. Filtra, busca y organiza tu ropa como quieras.</p>
+            </div>
+          </div>
+    
+          <div class="feature-item">
+            <div class="number-circle">3</div>
+            <div>
+              <h3>Sugerencias diarias de estilo.</h3>
+              <p>Recibe ideas de outfits basadas en tu estilo personal. Mejoran conforme más uses la app.</p>
+            </div>
+          </div>
+    
+          <!-- ITEM RESALTADO (NÚMERO 4) -->
+          <div class="feature-item destacado">
+            <div class="number-circle">4</div>
+            <div>
+              <h3>Tus amigos, un solo armario.</h3>
+              <p>Mira los closets de tus amigos, inspírate y comparte outfits con ellos.</p>
+            </div>
+          </div>
+    
+          <div class="feature-item">
+            <div class="number-circle">5</div>
+            <div>
+              <h3>Planea y controla tus prendas.</h3>
+              <p>Organiza outfits, revisa estadísticas de uso y toma mejores decisiones al vestir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- SECCIÓN ¿CÓMO USAR? -->
+<div class="bloque-uso">
+
+  <!-- LÍNEA DIVISORA MORADA -->
+  <div class="linea-divisora"></div>
+
+  <section class="Seccion-Actividades">
+    <div class="cont-gral-actividades">
+
+      <div class="cont-actividad-texto">
+
+        <h2 class="titulo-uso">¿Cómo usar?</h2>
+        <p class="texto-tutorial">Aquí tienes un pequeño tutorial para comenzar</p>
+
+        <p class="descripcion-uso">
+          Descubre las últimas actividades de la comunidad, explora looks
+          populares y encuentra nuevas fuentes de inspiración en la moda.
+        </p>
 
         <div class="cont-actividad-video">
           <iframe
@@ -110,154 +167,110 @@
             height="315"
           ></iframe>
         </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FORMULARIO -->
-    <section class="seccion-formulario">
-      <div class="div-cont-formulario">
-        <h2>Formulario del registro</h2>
-        <p>Complete todos los campos</p>
+</div>
 
-        <form>
-          <div class="campo">
-            <label for="nombre">Nombres completos:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingrese sus nombres"
-            />
-          </div>
 
-          <div class="campo">
-            <label for="pais">País:</label>
-            <select id="pais" name="pais">
-              <option value="">Seleccione un país</option>
-              <option value="Peru">Perú</option>
-              <option value="Ecuador">Ecuador</option>
-              <option value="Argentina">Argentina</option>
-              <option value="Paraguay">Paraguay</option>
-              <option value="Uruguay">Uruguay</option>
-              <option value="Colombia">Colombia</option>
-            </select>
-          </div>
+<!-- FORMULARIO -->
+<section class="seccion-formulario">
 
-          <div class="campo">
-            <label>Intereses:</label>
-            <ul class="lista-checkbox">
-              <li>
-                <label
-                  ><input type="checkbox" name="intereses" value="tecnologia" />
-                  Tecnología</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="checkbox" name="intereses" value="educacion" />
-                  Educación</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="checkbox" name="intereses" value="deporte" />
-                  Deporte</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="checkbox" name="intereses" value="arte" />
-                  Arte</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="checkbox" name="intereses" value="ciencia" />
-                  Ciencia</label
-                >
-              </li>
-            </ul>
-          </div>
+  <!-- BARRITA MORADA ARRIBA -->
+  <div class="linea-divisora"></div>
 
-          <div class="campo">
-            <label>Sexo:</label>
-            <ul class="lista-radio">
-              <li>
-                <label
-                  ><input type="radio" name="genero" value="masculino" />
-                  Masculino</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="radio" name="genero" value="femenino" />
-                  Femenino</label
-                >
-              </li>
-            </ul>
-          </div>
+  <!-- TÍTULO DEL FORMULARIO -->
+  <h2 class="titulo-formulario">Envíanos tus preferencias</h2>
 
-          <button type="submit">Enviar</button>
-        </form>
+  <div class="div-cont-formulario">
+    <form>
+      <div class="campo">
+        <label for="nombre">Nombres completos:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ingrese sus nombres"
+        />
       </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <img src="image/logo_ihc.png" alt="MyLook logo" class="footer-logo" />
-          <p>MyLook © 2025</p>
-        </div>
-
-        <div class="footer-right">
-          <div class="footer-links">
-            <h4>Legal</h4>
-            <a href="https://policies.google.com/privacy?hl=es" target="_blank"
-              >Política de Privacidad</a
-            >
-            <a
-              href="https://phylo.co/blog/que-son-los-terminos-y-condiciones/"
-              target="_blank"
-              >Términos y Condiciones</a
-            >
-            <a href="docs/proteccion_de_datos.pdf" target="_blank"
-              >Protección de Datos</a
-            >
-          </div>
-
-          <div class="footer-social">
-            <h4>Síguenos</h4>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
-                alt="Twitter"
-                class="social-icon"
-            /></a>
-          </div>
-        </div>
+      <div class="campo">
+        <label for="pais">Categorias:</label>
+        <select id="pais" name="pais">
+          <option value="">Seleccione una categoria</option>
+          <option value="Peru">Invierno</option>
+          <option value="Ecuador">Verano</option>
+          <option value="Argentina">Primavera</option>
+          <option value="Paraguay">Otoño</option>
+        </select>
       </div>
-    </footer>
 
-    <!-- SCRIPT: CERRAR SESIÓN pra logears-->
+      <div class="campo">
+        <label>Intereses:</label>
+        <ul class="lista-checkbox">
+          <li><label><input type="checkbox" /> Clasico</label></li>
+          <li><label><input type="checkbox" /> Urbano</label></li>
+          <li><label><input type="checkbox" /> Deporte</label></li>
+          <li><label><input type="checkbox" /> Casual</label></li>
+          <li><label><input type="checkbox" /> Y2K</label></li>
+        </ul>
+      </div>
+
+      <div class="campo">
+        <label>Sexo:</label>
+        <ul class="lista-radio">
+          <li><label><input type="radio" /> Masculino</label></li>
+          <li><label><input type="radio" /> Femenino</label></li>
+        </ul>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</section>
+
+
+
+
+   <!-- FOOTER -->
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="image/logo_ihc.png" alt="MyLook logo" class="footer-logo" />
+      <p>MyLook © 2025</p>
+    </div>
+
+    <div class="footer-right">
+      
+      <!-- LEGAL más hacia la izquierda -->
+      <div class="footer-links footer-legal-column">
+        <h4>Legal</h4>
+        <a href="https://policies.google.com/privacy?hl=es" target="_blank">Política de Privacidad</a>
+        <a href="https://phylo.co/blog/que-son-los-terminos-y-condiciones/" target="_blank">Términos y Condiciones</a>
+        <a href="docs/proteccion_de_datos.pdf" target="_blank">Protección de Datos</a>
+      </div>
+
+      <!-- SIGUENOS totalmente a la derecha -->
+      <div class="footer-social push-right">
+        <h4>Síguenos</h4>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" class="social-icon" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Instagram" class="social-icon" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="social-icon" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145806.png" alt="Twitter" class="social-icon" /></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+    <!-- SCRIPT: CERRAR SESIÓN -->
     <script>
       const usuario = localStorage.getItem("usuario");
 

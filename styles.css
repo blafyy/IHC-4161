@@ -35,7 +35,7 @@ textarea {
 
 .top-header {
   position: fixed;
-  background-color: white;
+  background-color: #F3E8FF; 
   width: 100%;
   height: 5.625rem;
   display: flex;
@@ -43,6 +43,7 @@ textarea {
   justify-content: space-between;
   padding: 0 1rem;
   z-index: 100;
+  border-bottom: 2px solid #C8B6EA;
 }
 
 .Menu-Horizontal {
@@ -58,11 +59,12 @@ textarea {
 .Menu-Horizontal li {
   display: block;
   padding: 0.9375rem 1.25rem;
-  color: black;
+  color: #6A4FB6;
+  cursor: pointer;
 }
 
 .Menu-Horizontal li:hover {
-  color: red;
+  color: #4E2FA5;
 }
 
 .Menu-Horizontal li a {
@@ -75,8 +77,9 @@ textarea {
   position: absolute;
   display: none;
   width: 12.5rem;
-  background-color: white;
+  background-color: #F3E8FF;
   z-index: 100;
+  border: 1px solid #C8B6EA;
 }
 
 .Menu-Horizontal li:hover .Menu-Vertical {
@@ -85,12 +88,12 @@ textarea {
 
 .Menu-Vertical li {
   display: block;
-  color: green;
+  color: #6A4FB6;
   padding: 0.9375rem 0.9375rem 1.25rem;
 }
 
 .Menu-Vertical li:hover {
-  background-color: grey;
+  background-color: #E6D8FF;
 }
 
 /* BOTÓN HAMBURGUESA */
@@ -101,15 +104,16 @@ textarea {
   border: none;
   cursor: pointer;
   margin-right: 1rem;
+  color: #6A4FB6;
 }
 
 /* ===================================================== */
-/* SECCIÓN COMUNIDAD */
+/* SECCIÓN COMUNIDAD (SOCIAL) */
 /* ===================================================== */
 
 .seccion-comunnity {
   padding: 7.5rem 1.25rem 5rem;
-  background-color: rgb(221, 230, 227);
+  background-color: #F2F2F2; 
 }
 
 .cont-gral-comunnity {
@@ -127,11 +131,6 @@ textarea {
   text-align: left;
 }
 
-.cont-communn-texto h2 {
-  color: blue;
-  margin-bottom: 1.1875rem;
-  text-align: center;
-}
 
 .cont-communn-texto p {
   color: black;
@@ -179,12 +178,13 @@ textarea {
   line-height: 1.6;
 }
 
-.cont-actividad-video {
-  flex: 1;
-}
-
 .Seccion-Actividades {
   padding: 5rem 1.25rem;
+  background-color: #F2F2F2; 
+}
+
+.cont-actividad-video {
+  flex: 1;
 }
 
 .cont-actividad-video iframe {
@@ -196,7 +196,7 @@ textarea {
 /* ===================================================== */
 
 .seccion-formulario {
-  background-color: white;
+  background-color: #F2F2F2; 
   padding: 2.5rem;
   display: flex;
   justify-content: center;
@@ -204,34 +204,29 @@ textarea {
 }
 
 .div-cont-formulario {
-  background-color: white;
+  background-color: #FFFFFF; 
   padding: 1.875rem;
-  border: 0.125rem solid #000000;
+  border: 2px solid #6A4FB6;
   border-radius: 0.625rem;
   width: 100%;
   max-width: 31.25rem;
 }
 
-.campo {
-  padding: 0.9375rem;
-  margin-bottom: 0.9375rem;
-  border-radius: 0.5rem;
-  background-color: aquamarine;
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.625rem;
+  background-color: #EDE4FF;
+  border: 1px solid #B9A7E9;
+  border-radius: 0.4rem;
 }
 
 .formulario label {
   display: block;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: blue;
-}
-
-input[type="text"],
-select {
-  width: 100%;
-  padding: 0.625rem;
-  border: 1px solid #ccc;
-  border-radius: 0.3125rem;
+  color: #6A4FB6;
 }
 
 .lista-checkbox,
@@ -239,8 +234,9 @@ select {
   list-style: none;
   padding: 0.625rem;
   margin: 0;
-  background-color: cadetblue;
+  background-color: #F7F3E8;
   border-radius: 0.5rem;
+  border: 1px solid #C7BC9E;
 }
 
 .lista-checkbox li,
@@ -249,16 +245,17 @@ select {
 }
 
 button {
-  background-color: orange;
+  background-color: #A58BDE;
   color: white;
   border: none;
   padding: 0.75rem 1.25rem;
-  border-radius: 0.3125rem;
+  border-radius: 0.4rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  opacity: 0.9;
+  background-color: #6A4FB6;
 }
 
 /* ===================================================== */
@@ -266,10 +263,9 @@ button:hover {
 /* ===================================================== */
 
 .footer {
-  background-color: #222;
+  background-color: #222; /* ✅ NO CAMBIA */
   color: white;
   padding: 2rem 1rem;
-  font-family: "Alfa Slab One", serif !important;
 }
 
 .footer-container {
@@ -299,7 +295,7 @@ button:hover {
   gap: 2rem;
   flex: 1;
   min-width: 200px;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .footer-links a {
@@ -312,6 +308,13 @@ button:hover {
 .footer-links a:hover {
   color: #fff;
 }
+
+.footer-legal {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 
 .social-icon {
   width: 32px;
@@ -328,18 +331,17 @@ button:hover {
 /* RESPONSIVE */
 /* ===================================================== */
 
-/* TABLET (768px) */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    color: black;
+    color: #6A4FB6;
   }
 
   .Menu-Horizontal {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: white;
+    background-color: #F3E8FF;
     position: absolute;
     top: 5rem;
     left: 0;
@@ -351,51 +353,333 @@ button:hover {
   }
 
   .Menu-Horizontal li {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #C8B6EA;
     text-align: center;
     padding: 0.5rem 0;
   }
+}
 
-  .cont-gral-comunnity,
-  .cont-gral-actividades {
+/* ===================================================== */
+/* APP TOUR SECTION */
+/* ===================================================== */
+.app-tour {
+  background-color: #F2F2F2;
+  padding: 6rem 1rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.app-tour-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  position: relative;
+  text-align: center;
+}
+
+/* IMAGEN APP */
+.app-tour-image {
+  position: relative;
+  z-index: 3; 
+}
+
+.app-tour-image img {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* TEXTO */
+.app-tour-text {
+  position: relative;
+  z-index: 4; 
+  margin-right: 3rem;
+}
+
+/* TÍTULO */
+.titulo-grande {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #000;
+}
+
+/* SUBTITULO */
+.titulo-pequeno {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #555;
+  letter-spacing: 2px;
+}
+
+/* MANCHA */
+.blob-img {
+  position: absolute;
+  top: 55%;
+  left: 80%;              
+  transform: translate(-50%, -50%);
+  width: 430px;
+  height: auto;
+  z-index: 1;             
+  opacity: 0.7;
+}
+
+/* ===================================================== */
+/* RESPONSIVE */
+/* ===================================================== */
+@media (max-width: 768px) {
+  
+  .app-tour-container {
     flex-direction: column;
-    text-align: center;
+    gap: 2rem;
   }
 
-  .cont-communn-texto,
-  .cont-actividad-texto {
-    text-align: center;
+  .app-tour-text {
+    margin-right: 0;
+    z-index: 4;
   }
 
-  .top-header {
-    height: auto;
-    padding: 1rem;
+  .titulo-grande {
+    font-size: 3.2rem;
+  }
+
+  .titulo-pequeno {
+    font-size: 1.7rem;
+  }
+
+  /* MANCHA RESPONSIVE*/
+  .blob-img {
+    top: 70%;          
+    left: 50%;        
+    width: 280px;
+    transform: translate(-50%, -20%);
+    z-index: 1;        
+  }
+
+  .app-tour-image img {
+    width: 330px;
   }
 }
 
-/* MÓVIL (600px) */
-@media (max-width: 600px) {
-  .cont-gral-comunnity,
-  .cont-gral-actividades {
+/* ===================================================== */
+/* BANNER COMPLETO BAJO APP TOUR */
+/* ===================================================== */
+
+.banner-full {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-full img {
+  width: 100%;
+  height: auto;
+  display: block;  
+}
+
+/* ===================================================== */
+/* SECCIÓN SOCIAL TIPO WHERING */
+/* ===================================================== */
+
+.social-new {
+  background-color: #F2F2F2;
+  padding: 5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* IMAGEN DEL CELULAR */
+.social-image img {
+  width: 500px; 
+  max-width: 300%;
+}
+
+/* TEXTO */
+.social-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+/* FILA DE ITEM */
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* NÚMERO EN CÍRCULO */
+.number-circle {
+  width: 32px;
+  height: 32px;
+  background-color: #D6B4FF;   
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* TITULOS Y PÁRRAFOS */
+.feature-item h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.feature-item p {
+  margin: 0.3rem 0 0;
+  color: #444;
+}
+
+
+
+/* ===================================================== */
+/* RESPONSIVE */
+/* ===================================================== */
+
+@media (max-width: 900px) {
+  .social-container {
     flex-direction: column;
     text-align: center;
   }
 
-  .seccion-formulario {
-    padding: 1.25rem;
+  .feature-item {
+    justify-content: center;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
   }
+}
 
-  .div-cont-formulario {
-    padding: 1.25rem;
-  }
+/* ===================================================== */
+/* FONDO GRIS PASTEL PARA LA SECCIÓN DEL TÍTULO Y LÍNEA */
+/* ===================================================== */
+.bloque-uso {
+  background-color: #F3F3F3; 
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  margin: 3rem auto;
+  text-align: center;
+}
 
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
+/* ===================================================== */
+/* LÍNEA MORADA PASTEL */
+/* ===================================================== */
+.linea-divisora {
+  width: 120px;
+  height: 4px;
+  background-color: #C8B6EA;
+  margin: 0 auto 2rem;
+  border-radius: 10px;
+}
 
-  .footer-right {
-    flex-direction: column;
-    align-items: center;
-  }
+/* ===================================================== */
+/* TÍTULO MORADO */
+/* ===================================================== */
+.titulo-uso {
+  color: #C8B6EA !important; 
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+
+/* TEXTO PEQUEÑO DEBAJO DEL TÍTULO */
+.texto-tutorial {
+  font-size: 1.15rem;
+  color: #6A4FB6;
+  opacity: 0.9;
+}
+
+/* SECCIÓN FORMULARIO */
+.seccion-formulario {
+  background: #f3f3f3;
+  padding: 2rem 0;
+  width: 100%;
+  display: block;       
+}
+
+/* TÍTULO ARRIBA DEL FORMULARIO */
+.titulo-formulario {
+  text-align: center;
+  color: #C8B6EA;       
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.linea-divisora {
+  width: 80px;
+  height: 3px;
+  background: #C8B6EA;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 10px;
+}
+
+/* CONTENEDOR FORMULARIO */
+.div-cont-formulario {
+  max-width: 550px;
+  margin: 0 auto;      
+  padding: 2rem;
+  background: white;
+  border: 2px solid #C8B6EA;
+  border-radius: 12px;
+}
+
+/* Bloques pastel para Intereses y Sexo */
+.lista-checkbox,
+.lista-radio {
+  background: #E9DFFC;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #C8B6EA;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.lista-checkbox li,
+.lista-radio li {
+  margin-bottom: 0.4rem;
+}
+
+/* Inputs pastel */
+.campo input[type="text"],
+.campo select {
+  background: #E9DFFC; 
+  border: 1px solid #C8B6EA;
+  border-radius: 6px;
+  padding: 0.5rem;
+  width: 100%;
+  outline: none;
+}
+
+button[type="submit"] {
+  margin-top: 1.2rem; 
+}
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-legal-column {
+  margin-left: -90px; 
+}
+
+.push-right {
+  margin-left: auto; 
 }

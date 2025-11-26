@@ -1,25 +1,65 @@
-// La función que maneja la lógica de inicio de sesión
+// Mostrar/ocultar contraseña
+function togglePassword() {
+  const input = document.getElementById("password");
+  const icon = document.querySelector(".toggle-password");
+
+  if (input.type === "password") {
+    input.type = "text";
+    icon.classList.replace("fa-eye", "fa-eye-slash");
+  } else {
+    input.type = "password";
+    icon.classList.replace("fa-eye-slash", "fa-eye");
+  }
+}
+
+// Login funcionando
 function validarLogin(event) {
-  // Previene el envío del formulario por defecto (evita la recarga)
   event.preventDefault();
 
-  // Clave estática para la demo
-  const CLAVE_SECRETA = "contraseña";
-  const passwordInput = document.getElementById("password").value;
+  const claveCorrecta = "ok";
+  const pass = document.getElementById("password").value;
 
-  // 2. Realizar la verificación
-  if (passwordInput.toLowerCase() === CLAVE_SECRETA) {
-    // 🔥 Guardar sesión
+  if (pass.toLowerCase() === claveCorrecta) {
+    alert("✅ Bienvenido");
+
+    //  Guardar sesión
     localStorage.setItem("usuario", "activo");
 
-    alert("¡Acceso concedido! Bienvenido.");
-
-    // Redirige a tu página principal
     window.location.href = "LP.html";
   } else {
-    alert("Clave incorrecta. Inténtalo de nuevo.");
+    alert("❌ Contraseña incorrecta");
     document.getElementById("password").value = "";
   }
+}
 
-  return false;
+//  Mostrar registro
+function mostrarRegistro() {
+  document.getElementById("loginForm").style.display = "none";
+  document.getElementById("registerForm").style.display = "block";
+}
+
+// Volver al login
+function mostrarLogin() {
+  document.getElementById("registerForm").style.display = "none";
+  document.getElementById("loginForm").style.display = "block";
+}
+
+// Registrar usuario
+function registrarUsuario(event) {
+  event.preventDefault();
+
+  const pass = document.getElementById("regPass").value;
+  const confirm = document.getElementById("regConfirm").value;
+
+  if (pass !== confirm) {
+    alert("⚠️ Las contraseñas no coinciden");
+    return;
+  }
+
+  alert("✅ Registro exitoso!");
+
+  // Guardar sesión también al registrar
+  localStorage.setItem("usuario", "activo");
+
+  window.location.href = "LP.html";
 }
